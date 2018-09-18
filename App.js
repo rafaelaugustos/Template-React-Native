@@ -1,13 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import QRCodeScanner from 'react-native-qrcode-scanner'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -24,6 +17,18 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <QRCodeScanner
+          topContent={
+            <Text style={styles.centerText}>
+              Go to <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on your computer and scan the QR code.
+            </Text>
+          }
+          bottomContent={
+            <TouchableOpacity style={styles.buttonTouchable}>
+              <Text style={styles.buttonText}>OK. Got it!</Text>
+            </TouchableOpacity>
+          }
+        />
       </View>
     );
   }
