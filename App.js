@@ -3,6 +3,7 @@ import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner'
 import DeviceInfo from 'react-native-device-info'
 import LinearGradient from 'react-native-linear-gradient'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,6 +20,7 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Icon name="home" />
         <QRCodeScanner
           topContent={
             <Text style={styles.centerText}>
