@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
     },
     Icon: {
         padding: 10
+    },
+    Preview: {
+        flex: 1
     }
 })
 

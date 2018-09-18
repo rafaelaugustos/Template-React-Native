@@ -3,6 +3,7 @@ import { Router, Stack, Scene } from 'react-native-router-flux'
 
 // Rotas
 import Home from '../views/Home'
+import Camera from '../views/Camera'
 import Device from '../views/Device'
 import Gradient from '../views/Gradient'
 import QrCode from '../views/QrCode'
@@ -16,6 +17,7 @@ class Routers extends Component {
                 <Stack key="root">
                     <Scene key="home" component={Home} title="Home" />
 
+                    <Scene key="camera" component={Camera} title="Camera" />
                     <Scene key="device" component={Device} title="Device" />
                     <Scene key="gradient" component={Gradient} title="Gradient" />
                     <Scene key="qrcode" component={QrCode} title="QrCode" />
