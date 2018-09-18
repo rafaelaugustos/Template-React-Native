@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
+
+// Project
+import HomeView from '../components/Home'
 
 class Home extends Component {
     render(){
         return(
-            <View>
-                <Text>OOOOO</Text>
-            </View>
+            <HomeView />
         )
     }
 }
