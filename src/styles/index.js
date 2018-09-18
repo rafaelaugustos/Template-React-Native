@@ -18,6 +18,13 @@ const styles = StyleSheet.create({
     },
     ButtonText: {
         color: '#FFF'
+    },
+    Row: {
+        flexDirection: 'row',
+        flexWrap: 'wrap'
+    },
+    Icon: {
+        padding: 10
     }
 })
 
