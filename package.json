@@ -12,6 +12,7 @@
     "react": "16.5.0",
     "react-native": "0.57.0",
     "react-native-camera": "^1.2.0",
+    "react-native-device-info": "^0.22.5",
     "react-native-qrcode-scanner": "^1.1.0"
   },
   "devDependencies": {
