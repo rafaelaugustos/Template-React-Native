@@ -15,6 +15,7 @@ const Home = () => {
             <Button text="QrCode" onPress={() => Actions.qrcode({})} />
             <Button text="Shimmer" onPress={() => Actions.shimmer({})} />
             <Button text="Icons" onPress={() => Actions.icons({})} />
+            <Button text="Animations" onPress={() => Actions.animations({})} />
         </View>
     )
 }

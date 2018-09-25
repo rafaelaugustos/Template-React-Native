@@ -9,6 +9,7 @@ import Gradient from '../views/Gradient'
 import QrCode from '../views/QrCode'
 import Shimmer from '../views/Shimmer'
 import Icons from '../views/Icons'
+import Animations from '../views/Animations'
 
 class Routers extends Component {
     render(){
@@ -23,6 +24,7 @@ class Routers extends Component {
                     <Scene key="qrcode" component={QrCode} title="QrCode" />
                     <Scene key="shimmer" component={Shimmer} title="Shimmer" />
                     <Scene key="icons" component={Icons} title="Icons" />
+                    <Scene key="animations" component={Animations} title="Animations" />
                 </Stack>
             </Router>
         )
